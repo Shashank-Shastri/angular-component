@@ -1,0 +1,4 @@
+<label for="cars">{{ label }}: </label>
+<select name="cars" id="cars" (change)="selectItem($event)">
+  <option [value]="option" *ngFor="let option of options">{{ option }}</option>
+</select>
